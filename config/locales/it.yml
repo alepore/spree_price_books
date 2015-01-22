@@ -1,0 +1,27 @@
+it:
+  activerecord:
+    attributes:
+      spree/currency_rate:
+        base_currency: Valuta Base
+        currency: Valuta
+        default: Default
+        exchange_rate: Tasso di Cambio
+      spree/price_book:
+        currency: Valuta
+        default: Default
+        price_adjustment_factor: Fattore
+    errors:
+      models:
+        spree/price:
+          attributes:
+            currency:
+              match_price_book: Deve corrispondere con la valuta del listino.
+    models:
+      spree/currency_rate:
+        one: Tasso di Cambio
+        other: Tassi di Cambio
+      spree/price_book:
+        one: Listino
+        other: Listini
+  spree:
+    editing_currency_rate: Modifica Tasso di Cambio
